@@ -1,0 +1,19 @@
+.homebody{
+    display: flex;
+    margin: 0px;
+    flex-direction: row;
+    padding: 0px;
+    width: 100vh;
+}
+.hometext{
+   
+}
+.main-heading{
+    text-align: center;
+}
+.img1{
+    height: 550px;
+   top:50px;
+    position: relative;
+    left:110%;
+}
