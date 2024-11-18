@@ -1,21 +1,25 @@
 .homebody{
-    display: flex;
-    margin: 0px;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    width: 100vh;
-}
-
-.main-heading{
-    text-align: center;
-    position: relative;
-    left:80%;
-    font-size: 60px;
+    background-color: #FAF3E0;
 }
 .img1{
-    height: 550px;
-   top:150px;
-    position: relative;
-    left:120%;
+    height: 200px;
+border-radius: 10px;
+margin: 10px;
+margin-left: 43%;
+text-align: center;}
+.main-heading{
+    color: #3B1F1F;
+    font-size: 60px;
+}
+p{
+    color: #FFD700;
+    font-weight: bold;
+    font-size: larger;
+}
+span{
+    color: #800000;
+    font-size: large;
+}
+.bodyhome{
+    text-align: center;
 }
