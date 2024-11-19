@@ -21,5 +21,18 @@ h3{
     display: block;
     margin: 20px auto;
     border-radius: 10px;
+    position: relative;
 
+}
+.delbtn{
+position: absolute;
+bottom: 10px;
+right: 10px;
+padding:  4px 8px;
+border-radius: 4px;
+border:none;
+background-color: beige;
+font-weight: bold;
+color: #3B1F1F;
+cursor: pointer;
 }

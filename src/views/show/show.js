@@ -9,7 +9,8 @@ function Displaynotes() {
         <div key={index} className="taskcard">
             <h3>{task.title}</h3>
             <i>{task.type}</i>
-            <button></button>
+            <br/>
+            <button type="btn" className="delbtn">Delete</button>
         </div>
     ));
 }
