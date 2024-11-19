@@ -9,3 +9,17 @@
     margin-top: 0px;
     color: #3B1F1F;
 }
+h3{
+    font-size: large;
+    margin-top:5px;
+}
+.taskcard{
+    background-color: #520202;
+    color:#FAF3E0;
+    width: 400px;
+    padding: 10px 20px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+
+}
