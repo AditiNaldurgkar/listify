@@ -1,3 +1,15 @@
-.taglineadd{
+.addcontainer{
+    background-color: #FAF3E0;
+    margin-top: 0px;
+    padding: 0px;
+    height: 100vh;
+}
+.addtag{
     text-align: center;
+    color: #3B1F1F;
+    margin-top: 0px;
+}
+.subtag{
+    text-align: center;
+    font-style: italic;
 }

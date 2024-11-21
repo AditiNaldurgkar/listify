@@ -1,7 +1,10 @@
 import "./home.css"
+import toast, { Toaster } from 'react-hot-toast';
 import { Link } from "react-router-dom";
 import icon1 from "./icon1.png"
+
 function Home(){
+    
     return <div className="homebody">
         <img src={icon1} className="img1"></img>
         <div className="bodyhome">
