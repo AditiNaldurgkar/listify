@@ -2,7 +2,6 @@ import "./home.css"
 import toast, { Toaster } from 'react-hot-toast';
 import { Link } from "react-router-dom";
 import icon1 from "./icon1.png"
-
 function Home(){
     
     return <div className="homebody">
@@ -18,6 +17,7 @@ function Home(){
             <button type="button" className="showbtn">Show Note</button>
             </Link>
         </div>
+     <Toaster/>
     </div>
 }
 export default Home;
