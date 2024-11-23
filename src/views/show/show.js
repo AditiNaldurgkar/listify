@@ -1,26 +1,39 @@
 import "./show.css"
-const tasks =[
-    {title :"Finish revision of maths",type:"study"},
-    {
-        title:"buy fresh veggies",type:"daily work"
-}]
+import toast,{Toaster} from "react-hot-toast";
+
 function Displaynotes() {
+    const tasks = JSON.parse(localStorage.getItem("tasks"));   
+
     return tasks.map((task, index) => (
         <div key={index} className="taskcard">
             <h3>{task.title}</h3>
-            <i>{task.type}</i>
+            <i>{task.desp}</i>
             <br/>
-            <button type="btn" className="delbtn">Delete</button>
+            <button type="btn" className="delbtn" onClick={()=>deletenote(index)}>Delete</button>
         </div>
-    ));
+    )
+);
+    
+  
 }
+function deletenote(index){
+    const tasks = JSON.parse(localStorage.getItem("tasks"))||[];   
+    tasks.splice(index,1);
+    localStorage.setItem("tasks",JSON.stringify(tasks));
+    toast.success("deleted task successfully");
+    window.location.reload();
+    }
+
 
 function Shownote() {
+    toast.success("task loaded successfully");
     return (
         <div className="bodyshow">
             <h1 className="taglineshow">Here are your tasks for the day!</h1>
             <Displaynotes />
+            <Toaster/>
         </div>
+       
     );
 }
 

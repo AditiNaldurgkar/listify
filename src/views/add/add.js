@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./add.css"
+import toast ,{Toaster}from "react-hot-toast";
 
 function Addnote(){
     const [title,setTitle] = useState("");
@@ -14,7 +15,7 @@ function Addnote(){
        <label>Task description :</label>
        <input type="text" onChange={(e)=>{setDesp(e.target.value)}}></input>
        <button type="button" className="addtaskbtn" onClick={addTask}>Add Task</button>
-
+<Toaster/>
        </div>
     </div>
     function addTask(){
@@ -22,6 +23,7 @@ function Addnote(){
         const noteobj ={title,desp}
         notes.push(noteobj);
         localStorage.setItem( "tasks",JSON.stringify(notes));
+        toast.success("Task added successfully");
     }
 }
 
