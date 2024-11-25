@@ -4,6 +4,18 @@
     padding: 0px;
     height: 100vh;
 }
+.homebtn{
+    height: 50px;
+    position: fixed;
+    top:40px;
+    right:80px;
+}
+.shownotes{
+    position: fixed;
+    top:120px;
+    right: 90px;
+    width: 35px;
+}
 .addtag{
     text-align: center;
     color: #3B1F1F;

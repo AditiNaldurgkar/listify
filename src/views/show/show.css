@@ -14,6 +14,12 @@ h3{
     margin-top:5px;
     margin-bottom: 3px;
 }
+.homebtn{
+    height: 50px;
+    position: fixed;
+    top:40px;
+    right:80px;
+}
 .taskcard{
     background-color: #520202;
     color:#FAF3E0;
@@ -29,7 +35,7 @@ h3{
 position: absolute;
 bottom: 10px;
 right: 10px;
-padding:  4px 8px;
+padding:  5px 8px;
 border-radius: 4px;
 border:none;
 background-color: beige;
